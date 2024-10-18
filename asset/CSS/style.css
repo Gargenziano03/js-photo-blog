@@ -1,6 +1,13 @@
-img{
-   width: 100%; 
+img {
+    width: 100%;
 }
-header{
+
+header {
     background-image: url(../../img/wall.png);
+    h1{
+        font-family: "Sometype Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+    }
 }
