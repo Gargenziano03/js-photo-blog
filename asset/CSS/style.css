@@ -14,4 +14,10 @@ header {
 
 main{
     background-image: url(../../img/cork.png);
+    p{
+      font-family: "Edu TAS Beginner", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
 }
