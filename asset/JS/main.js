@@ -23,8 +23,15 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
   .then(response => {
     const cards = response.data
     console.log(cards);
+    
+    //ciclare nelle cards
+    let cardEls = "";
+    cards.forEach(card => {
+        const {albumID, id, title, url, thumbnailUrl} = card;
 
-
+       
+        
+    });
 })
 
 
