@@ -17,7 +17,7 @@ rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano
  man mano una sotto l’altra ed il titolo abbia una dimensione adeguata 
 */
 
-const cardEl = document.querySelector('.card');
+const cardEl = document.querySelector('.cards');
 //eseguzione chiamata
 axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
   .then(response => {
@@ -30,14 +30,15 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
         const {albumID, id, title, url, thumbnailUrl} = card;
 
         //markup
-        const markup = `<div class="col 4">
-                    <div class="card rounded-0 ${id}">
-                        <img class="p-3" ${url}>
-                        <p>${thumbnailUrl}</p>
+        const markup = `<div class="col 4 p-3">
+                    <div class="card rounded-0  ">
+                        <img class="p-3" scr="${url}">
+                        <p>${title}</p>
                     </div>
                 </div>`
-                cardEls += markup  
+                cardEls += markup
     });
-})
+    cardEl.innerHTML = cardEls
+}).catch(err => console.error(err))
 
 
