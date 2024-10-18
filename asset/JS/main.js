@@ -29,8 +29,14 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
     cards.forEach(card => {
         const {albumID, id, title, url, thumbnailUrl} = card;
 
-       
-        
+        //markup
+        const markup = `<div class="col 4">
+                    <div class="card rounded-0 ${id}">
+                        <img class="p-3" ${url}>
+                        <p>${thumbnailUrl}</p>
+                    </div>
+                </div>`
+                cardEls += markup  
     });
 })
 
