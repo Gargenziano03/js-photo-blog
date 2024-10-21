@@ -39,6 +39,15 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
             cardEls += markup
         });
         cardEl.innerHTML = cardEls
-    }).catch(err => console.error(err))
+    }).catch(err => console.error(err));
+
+    function on() {
+        document.getElementById("overlay").style.display = "block";
+    }
+    function off() {
+        document.getElementById("overlay").style.display = "none";
+    }
+
+
 
 
