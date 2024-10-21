@@ -32,7 +32,7 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
             //markup
             const markup = `<div class="col-sm-12 col-md-6 col-lg-4  p-3">
                     <div class="card rounded-0">
-                        <img class="post" scr="${url}">
+                        <img scr="${url}">
                         <p>${title}</p>
                     </div>
                 </div>`
