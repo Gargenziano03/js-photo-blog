@@ -20,25 +20,25 @@ rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano
 const cardEl = document.querySelector('.cards');
 //eseguzione chiamata
 axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
-  .then(response => {
-    const cards = response.data
-    console.log(cards);
-    
-    //ciclare nelle cards
-    let cardEls = "";
-    cards.forEach(card => {
-        const {albumID, id, title, url, thumbnailUrl} = card;
+    .then(response => {
+        const cards = response.data
+        console.log(cards);
 
-        //markup
-        const markup = `<div class="col-sm-12 col-md-6 col-lg-4  p-3">
-                    <div class="card rounded-0 ${id}">
-                        <img class="p-3" scr="${url}">
+        //ciclare nelle cards
+        let cardEls = "";
+        cards.forEach(card => {
+            const { albumID, id, title, url, thumbnailUrl } = card;
+
+            //markup
+            const markup = `<div class="col-sm-12 col-md-6 col-lg-4  p-3">
+                    <div class="card rounded-0">
+                        <img class="post" scr="${url}">
                         <p>${title}</p>
                     </div>
                 </div>`
-                cardEls += markup
-    });
-    cardEl.innerHTML = cardEls
-}).catch(err => console.error(err))
+            cardEls += markup
+        });
+        cardEl.innerHTML = cardEls
+    }).catch(err => console.error(err))
 
 
