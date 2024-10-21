@@ -30,8 +30,8 @@ axios.get('https://jsonplaceholder.typicode.com/photos?_limit=6')
         const {albumID, id, title, url, thumbnailUrl} = card;
 
         //markup
-        const markup = `<div class="col 4 p-3">
-                    <div class="card rounded-0  ">
+        const markup = `<div class="col-sm-12 col-md-6 col-lg-4  p-3">
+                    <div class="card rounded-0 ${id}">
                         <img class="p-3" scr="${url}">
                         <p>${title}</p>
                     </div>

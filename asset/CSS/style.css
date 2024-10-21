@@ -1,23 +1,25 @@
 img {
-    width: 100%;
+  width: 100%;
 }
 
 header {
-    background-image: url(../../img/wall.png);
-    h1{
-        font-family: "Sometype Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 900;
-        font-style: normal;
-    }
+  background-image: url(../../img/wall.png);
+
+  h1 {
+    font-family: "Sometype Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
 }
 
-main{
-    background-image: url(../../img/cork.png);
-    p{
-      font-family: "Edu TAS Beginner", serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-    }
+main {
+  background-image: url(../../img/cork.png);
+
+  p {
+    font-family: "Edu TAS Beginner", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
